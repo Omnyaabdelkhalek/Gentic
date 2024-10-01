@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/font/all.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>result</title>
+  </head>
+  <body class="result-page" style="background-image: url('5052197.jpg')">
+    <iframe id="iframe" class="iframe" src="navber.html"></iframe>
+    <div class="result-container m-auto w-50 text-center pb-5 alert">
+      <div class="result-container">
+        <h2>Genetic Disorder Prediction Results</h2>
+        <div class="result">
+          <p>Result from Model 1:</p>
+          <p>{{ result1 }}</p>
+        </div>
+
+        <div class="result">
+          <p>Result from Model 2:</p>
+          <p>{{ result2 }}</p>
+        </div>
+        <!--  more details or styling based on your requirements -->
+      </div>
+      <div class="hidden">
+        <!-- {%if result1 == 0%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>There are Mitochondrial genetic inheritance disorders.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result1 == 1%} -->
+        <div class="main">
+          <p>There are Multifactorial genetic inheritance disorders.</p>
+        </div>
+
+        <!-- {%elif result1 == 2%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>There are Single-gene inheritance disorders.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result1 == 3%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>There are not any disorders.</p>
+          </div>
+        </div>
+
+        <!-- {%endif%} {%if result2 == 0%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>May lead to Alzheimer's.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result2 == 1%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>May lead to Cancer.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result2 == 2%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>May lead to Cystic fibrosis.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result2 == 3%} -->
+        <div class="row">
+          <div class="text">
+            <p>May lead to Diabetes.</p>
+          </div>
+
+          <!-- <div class="image">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2750/2750402.png"
+            />
+          </div> -->
+        </div>
+      </div>
+      <div class="hidden">
+        <!-- {%elif result2 == 4%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>May lead to Hemochromatosis.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result2 == 5%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>May lead to Leber's hereditary optic neuropathy.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result2 == 6%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>May lead to Leigh syndrome.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result2 == 7%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>May lead to Mitochondrial myopathy.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result2 == 8%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>May lead to Tay-Sachs.</p>
+          </div>
+        </div>
+
+        <!-- {%elif result2 == 9%} -->
+        <div class="head">
+          <div class="alert" role="alert">
+            <p>May lead to no diseases.</p>
+          </div>
+        </div>
+
+        <!-- {%endif%} -->
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+  </body>
+</html>

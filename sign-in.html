@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>sign-in page</title>
+  </head>
+  <body class="sign-in " style="background-image: url(microscope_947539.png);">
+    <iframe id="iframe" class="iframe" src="navber.html"></iframe>
+    <section class=" gradient-custom">
+      <div class="container py-5 h-100">
+        <div class="row d-flex justify-content-center align-items-center h-25">
+          <div class="col-12 col-md-8 col-lg-6 col-xl-5 w-75 m-auto">
+            <div class="card">
+              <div class="card-body p-5 text-center">
+                <div class="mb-md-5 mt-md-4 pb-5">
+                  <h2 class="fw-bold mb-2 text-uppercase text-color">
+                    sign IN
+                  </h2>
+                  <div class="form-outline mb-4">
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      id="signInEmail"
+                      class="form-control form-control-lg"
+                    />
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input
+                      type="password"
+                      placeholder="Enter your password"
+                      id="signInPassword"
+                      class="form-control form-control-lg"
+                    />
+                  </div>
+                  <p class="message d-none">All inputs is required</p>
+                  <p class="incorrect d-none">incorrect email or password</p>
+                  <a id="login" href="prediction.html"
+                    ><button class="btn w-100 px-5 fw-bold" id="login">
+                      Sign In
+                    </button></a
+                  >
+                </div>
+                <div class="account">
+                  <p class="mb-0">
+                    Don't have an account?
+                    <a href="smartlogin.html" class="fw-bold">Sign Up</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="js/main.js"></script>
+  </body>
+</html>
